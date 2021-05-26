@@ -35,3 +35,18 @@ function isElementVisible(el) {
       ||  el.contains(efp(rect.left,  rect.bottom))
     );
 }
+
+function getAge(dateString) {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
+const presentation = document.getElementById("presentation").innerHTML=`I'm Raúl "Simdrom" Fernández, a `+ getAge("1994/01/11") +` years-old developer from Móstoles, Spain.<br>
+I enjoy coding in every language I can and I want to learn more languages.<br>
+I wish I could build a Videogame company in a near future, because this puts my two passions together, code and videogames in one.`;
