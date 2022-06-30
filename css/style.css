@@ -1,10 +1,14 @@
 header.masthead .header-content .header-content-inner h1.low {
   font-size: 27px !important;
 }
-.service-box i{
-  font-size: 8rem
+.service-box i {
+  font-size: 8rem;
 }
 
-#portfolio{
-	display:none;
+#portfolio {
+  display: none;
+}
+
+#formerCompanies > div {
+  margin: 1em 0 3em 0;
 }
